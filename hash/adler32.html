@@ -1,0 +1,696 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>adler32 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../net/net.html" />
+    
+    
+    <link rel="prev" href="hash.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../errors/errors.html">
+            
+                <a href="../errors/errors.html">
+            
+                    
+                    errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../io/io.html">
+            
+                <a href="../io/io.html">
+            
+                    
+                    io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../bufio/bufio.html">
+            
+                <a href="../bufio/bufio.html">
+            
+                    
+                    bufio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../bytes/bytes.html">
+            
+                <a href="../bytes/bytes.html">
+            
+                    
+                    bytes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../strings/strings.html">
+            
+                <a href="../strings/strings.html">
+            
+                    
+                    strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../strconv/strconv.html">
+            
+                <a href="../strconv/strconv.html">
+            
+                    
+                    strconv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    container
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../container/heap.html">
+            
+                <a href="../container/heap.html">
+            
+                    
+                    heap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../container/list.html">
+            
+                <a href="../container/list.html">
+            
+                    
+                    list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../container/ring.html">
+            
+                <a href="../container/ring.html">
+            
+                    
+                    ring
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../os/os.html">
+            
+                <a href="../os/os.html">
+            
+                    
+                    os
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../path/path.html">
+            
+                <a href="../path/path.html">
+            
+                    
+                    path
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../path/filepath.html">
+            
+                <a href="../path/filepath.html">
+            
+                    
+                    filepath
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="hash.html">
+            
+                <a href="hash.html">
+            
+                    
+                    hash
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.11.1" data-path="adler32.html">
+            
+                <a href="adler32.html">
+            
+                    
+                    adler32
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../net/net.html">
+            
+                <a href="../net/net.html">
+            
+                    
+                    net
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../net/http.html">
+            
+                <a href="../net/http.html">
+            
+                    
+                    http
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../net/textproto.html">
+            
+                <a href="../net/textproto.html">
+            
+                    
+                    textproto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../net/url.html">
+            
+                <a href="../net/url.html">
+            
+                    
+                    url
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../time/time.html">
+            
+                <a href="../time/time.html">
+            
+                    
+                    time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../sync/sync.html">
+            
+                <a href="../sync/sync.html">
+            
+                    
+                    sync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../log/log.html">
+            
+                <a href="../log/log.html">
+            
+                    
+                    log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    encoding
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../encoding/base32.html">
+            
+                <a href="../encoding/base32.html">
+            
+                    
+                    base32
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../encoding/base64.html">
+            
+                <a href="../encoding/base64.html">
+            
+                    
+                    base64
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../encoding/hex.html">
+            
+                <a href="../encoding/hex.html">
+            
+                    
+                    hex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" data-path="../encoding/json.html">
+            
+                <a href="../encoding/json.html">
+            
+                    
+                    json
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" >
+            
+                <span>
+            
+                    
+                    crypto
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../crypto/md5.html">
+            
+                <a href="../crypto/md5.html">
+            
+                    
+                    md5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../crypto/sha256.html">
+            
+                <a href="../crypto/sha256.html">
+            
+                    
+                    sha256
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../crypto/hmac.html">
+            
+                <a href="../crypto/hmac.html">
+            
+                    
+                    hmac
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../reflect/reflect.html">
+            
+                <a href="../reflect/reflect.html">
+            
+                    
+                    reflect
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >adler32</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="adler32">adler32</h1>
+<p>Adler-32&#x662F;&#x4E00;&#x79CD;&#x6821;&#x9A8C;&#x548C;&#x7B97;&#x6CD5;&#xFF0C;&#x8BE6;&#x60C5;&#x53C2;&#x8003;<a href="https://en.wikipedia.org/wiki/Adler-32" target="_blank">wiki</a>&#x3002;</p>
+<p>&#x901A;&#x8FC7;<code>CheckSum</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x8BA1;&#x7B97;&#x6821;&#x9A8C;&#x548C;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-go">sum := adler32.Checksum([]<span class="hljs-keyword">byte</span>(<span class="hljs-string">&quot;Wikipedia&quot;</span>))
+fmt.Printf(<span class="hljs-string">&quot;%x&quot;</span>, sum) <span class="hljs-comment">// 11e60398</span>
+</code></pre>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>New</code>&#x65B9;&#x6CD5;&#x6765;&#x751F;&#x6210;&#x4E00;&#x4E2A;<code>hash.Hash32</code>&#x6765;&#x8BA1;&#x7B97;&#x6821;&#x9A8C;&#x548C;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-go">h := adler32.New()
+h.Write([]<span class="hljs-keyword">byte</span>(<span class="hljs-string">&quot;Wiki&quot;</span>))
+h.Write([]<span class="hljs-keyword">byte</span>(<span class="hljs-string">&quot;pedia&quot;</span>))
+fmt.Printf(<span class="hljs-string">&quot;%x&quot;</span>, h.Sum32()) <span class="hljs-comment">// 11e60398</span>
+</code></pre>
+<p>&#x7531;&#x4E8E;<code>hahs.Hash32</code>&#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#x4E86;<code>io.Writer</code>&#x63A5;&#x53E3;&#xFF0C;&#x56E0;&#x6B64;&#x6709;<code>Write</code>&#x65B9;&#x6CD5;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="hash.html" class="navigation navigation-prev " aria-label="Previous page: hash">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../net/net.html" class="navigation navigation-next " aria-label="Next page: net">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"adler32","level":"1.11.1","depth":2,"next":{"title":"net","level":"1.12","depth":1,"path":"net/net.md","ref":"./net/net.md","articles":[{"title":"http","level":"1.12.1","depth":2,"path":"net/http.md","ref":"./net/http.md","articles":[]},{"title":"textproto","level":"1.12.2","depth":2,"path":"net/textproto.md","ref":"./net/textproto.md","articles":[]},{"title":"url","level":"1.12.3","depth":2,"path":"net/url.md","ref":"./net/url.md","articles":[]}]},"previous":{"title":"hash","level":"1.11","depth":1,"path":"hash/hash.md","ref":"./hash/hash.md","articles":[{"title":"adler32","level":"1.11.1","depth":2,"path":"hash/adler32.md","ref":"./hash/adler32.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["github","edit-link","-fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/syaning/go-pkgs"},"edit-link":{"label":"Edit This Page","base":"https://github.com/syaning/go-pkgs/edit/master"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sharing":{"facebook":false,"twitter":false}},"gitbook":"*"},"file":{"path":"hash/adler32.md","mtime":"2017-05-08T05:27:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-09-05T07:48:45.469Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

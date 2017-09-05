@@ -1,0 +1,744 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>reflect · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../crypto/hmac.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../errors/errors.html">
+            
+                <a href="../errors/errors.html">
+            
+                    
+                    errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../io/io.html">
+            
+                <a href="../io/io.html">
+            
+                    
+                    io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../bufio/bufio.html">
+            
+                <a href="../bufio/bufio.html">
+            
+                    
+                    bufio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../bytes/bytes.html">
+            
+                <a href="../bytes/bytes.html">
+            
+                    
+                    bytes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../strings/strings.html">
+            
+                <a href="../strings/strings.html">
+            
+                    
+                    strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../strconv/strconv.html">
+            
+                <a href="../strconv/strconv.html">
+            
+                    
+                    strconv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    container
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../container/heap.html">
+            
+                <a href="../container/heap.html">
+            
+                    
+                    heap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../container/list.html">
+            
+                <a href="../container/list.html">
+            
+                    
+                    list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../container/ring.html">
+            
+                <a href="../container/ring.html">
+            
+                    
+                    ring
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../os/os.html">
+            
+                <a href="../os/os.html">
+            
+                    
+                    os
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../path/path.html">
+            
+                <a href="../path/path.html">
+            
+                    
+                    path
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../path/filepath.html">
+            
+                <a href="../path/filepath.html">
+            
+                    
+                    filepath
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../hash/hash.html">
+            
+                <a href="../hash/hash.html">
+            
+                    
+                    hash
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../hash/adler32.html">
+            
+                <a href="../hash/adler32.html">
+            
+                    
+                    adler32
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../net/net.html">
+            
+                <a href="../net/net.html">
+            
+                    
+                    net
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../net/http.html">
+            
+                <a href="../net/http.html">
+            
+                    
+                    http
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../net/textproto.html">
+            
+                <a href="../net/textproto.html">
+            
+                    
+                    textproto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../net/url.html">
+            
+                <a href="../net/url.html">
+            
+                    
+                    url
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../time/time.html">
+            
+                <a href="../time/time.html">
+            
+                    
+                    time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../sync/sync.html">
+            
+                <a href="../sync/sync.html">
+            
+                    
+                    sync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../log/log.html">
+            
+                <a href="../log/log.html">
+            
+                    
+                    log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    encoding
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../encoding/base32.html">
+            
+                <a href="../encoding/base32.html">
+            
+                    
+                    base32
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../encoding/base64.html">
+            
+                <a href="../encoding/base64.html">
+            
+                    
+                    base64
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../encoding/hex.html">
+            
+                <a href="../encoding/hex.html">
+            
+                    
+                    hex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" data-path="../encoding/json.html">
+            
+                <a href="../encoding/json.html">
+            
+                    
+                    json
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" >
+            
+                <span>
+            
+                    
+                    crypto
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../crypto/md5.html">
+            
+                <a href="../crypto/md5.html">
+            
+                    
+                    md5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../crypto/sha256.html">
+            
+                <a href="../crypto/sha256.html">
+            
+                    
+                    sha256
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../crypto/hmac.html">
+            
+                <a href="../crypto/hmac.html">
+            
+                    
+                    hmac
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.18" data-path="reflect.html">
+            
+                <a href="reflect.html">
+            
+                    
+                    reflect
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >reflect</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="reflect">reflect</h1>
+<h2 id="kind">Kind</h2>
+<p><code>Kind</code> &#x7528;&#x6765;&#x8868;&#x793A;&#x5177;&#x4F53;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Kind <span class="hljs-keyword">uint</span>
+
+<span class="hljs-keyword">const</span> (
+    Invalid Kind = <span class="hljs-literal">iota</span>
+    Bool
+    Int
+    Int8
+    Int16
+    Int32
+    Int64
+    Uint
+    Uint8
+    Uint16
+    Uint32
+    Uint64
+    Uintptr
+    Float32
+    Float64
+    Complex64
+    Complex128
+    Array
+    Chan
+    Func
+    Interface
+    Map
+    Ptr
+    Slice
+    String
+    Struct
+    UnsafePointer
+)
+</code></pre>
+<p><code>Kind</code> &#x5B9E;&#x73B0;&#x4E86; <code>Stringer</code> &#x63A5;&#x53E3;&#xFF0C;&#x56E0;&#x6B64;&#x6253;&#x5370;&#x51FA;&#x6765;&#x7684;&#x65F6;&#x5019;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x800C;&#x4E0D;&#x662F;&#x6570;&#x5B57;&#x3002;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">var</span> kindNames = []<span class="hljs-keyword">string</span>{
+    Invalid:       <span class="hljs-string">&quot;invalid&quot;</span>,
+    Bool:          <span class="hljs-string">&quot;bool&quot;</span>,
+    Int:           <span class="hljs-string">&quot;int&quot;</span>,
+    Int8:          <span class="hljs-string">&quot;int8&quot;</span>,
+    Int16:         <span class="hljs-string">&quot;int16&quot;</span>,
+    Int32:         <span class="hljs-string">&quot;int32&quot;</span>,
+    Int64:         <span class="hljs-string">&quot;int64&quot;</span>,
+    Uint:          <span class="hljs-string">&quot;uint&quot;</span>,
+    Uint8:         <span class="hljs-string">&quot;uint8&quot;</span>,
+    Uint16:        <span class="hljs-string">&quot;uint16&quot;</span>,
+    Uint32:        <span class="hljs-string">&quot;uint32&quot;</span>,
+    Uint64:        <span class="hljs-string">&quot;uint64&quot;</span>,
+    Uintptr:       <span class="hljs-string">&quot;uintptr&quot;</span>,
+    Float32:       <span class="hljs-string">&quot;float32&quot;</span>,
+    Float64:       <span class="hljs-string">&quot;float64&quot;</span>,
+    Complex64:     <span class="hljs-string">&quot;complex64&quot;</span>,
+    Complex128:    <span class="hljs-string">&quot;complex128&quot;</span>,
+    Array:         <span class="hljs-string">&quot;array&quot;</span>,
+    Chan:          <span class="hljs-string">&quot;chan&quot;</span>,
+    Func:          <span class="hljs-string">&quot;func&quot;</span>,
+    Interface:     <span class="hljs-string">&quot;interface&quot;</span>,
+    Map:           <span class="hljs-string">&quot;map&quot;</span>,
+    Ptr:           <span class="hljs-string">&quot;ptr&quot;</span>,
+    Slice:         <span class="hljs-string">&quot;slice&quot;</span>,
+    String:        <span class="hljs-string">&quot;string&quot;</span>,
+    Struct:        <span class="hljs-string">&quot;struct&quot;</span>,
+    UnsafePointer: <span class="hljs-string">&quot;unsafe.Pointer&quot;</span>,
+}
+</code></pre>
+<h2 id="type">Type</h2>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../crypto/hmac.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: hmac">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"reflect","level":"1.18","depth":1,"previous":{"title":"hmac","level":"1.17.3","depth":2,"path":"crypto/hmac.md","ref":"./crypto/hmac.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","edit-link","-fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/syaning/go-pkgs"},"edit-link":{"label":"Edit This Page","base":"https://github.com/syaning/go-pkgs/edit/master"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sharing":{"facebook":false,"twitter":false}},"gitbook":"*"},"file":{"path":"reflect/reflect.md","mtime":"2017-09-01T04:06:28.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-09-05T07:48:45.469Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

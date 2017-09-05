@@ -1,0 +1,906 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>bufio · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../bytes/bytes.html" />
+    
+    
+    <link rel="prev" href="../io/io.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../errors/errors.html">
+            
+                <a href="../errors/errors.html">
+            
+                    
+                    errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../io/io.html">
+            
+                <a href="../io/io.html">
+            
+                    
+                    io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="bufio.html">
+            
+                <a href="bufio.html">
+            
+                    
+                    bufio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../bytes/bytes.html">
+            
+                <a href="../bytes/bytes.html">
+            
+                    
+                    bytes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../strings/strings.html">
+            
+                <a href="../strings/strings.html">
+            
+                    
+                    strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../strconv/strconv.html">
+            
+                <a href="../strconv/strconv.html">
+            
+                    
+                    strconv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    container
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../container/heap.html">
+            
+                <a href="../container/heap.html">
+            
+                    
+                    heap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../container/list.html">
+            
+                <a href="../container/list.html">
+            
+                    
+                    list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../container/ring.html">
+            
+                <a href="../container/ring.html">
+            
+                    
+                    ring
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../os/os.html">
+            
+                <a href="../os/os.html">
+            
+                    
+                    os
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../path/path.html">
+            
+                <a href="../path/path.html">
+            
+                    
+                    path
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../path/filepath.html">
+            
+                <a href="../path/filepath.html">
+            
+                    
+                    filepath
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../hash/hash.html">
+            
+                <a href="../hash/hash.html">
+            
+                    
+                    hash
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../hash/adler32.html">
+            
+                <a href="../hash/adler32.html">
+            
+                    
+                    adler32
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../net/net.html">
+            
+                <a href="../net/net.html">
+            
+                    
+                    net
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../net/http.html">
+            
+                <a href="../net/http.html">
+            
+                    
+                    http
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../net/textproto.html">
+            
+                <a href="../net/textproto.html">
+            
+                    
+                    textproto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../net/url.html">
+            
+                <a href="../net/url.html">
+            
+                    
+                    url
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../time/time.html">
+            
+                <a href="../time/time.html">
+            
+                    
+                    time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../sync/sync.html">
+            
+                <a href="../sync/sync.html">
+            
+                    
+                    sync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../log/log.html">
+            
+                <a href="../log/log.html">
+            
+                    
+                    log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    encoding
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../encoding/base32.html">
+            
+                <a href="../encoding/base32.html">
+            
+                    
+                    base32
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../encoding/base64.html">
+            
+                <a href="../encoding/base64.html">
+            
+                    
+                    base64
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../encoding/hex.html">
+            
+                <a href="../encoding/hex.html">
+            
+                    
+                    hex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" data-path="../encoding/json.html">
+            
+                <a href="../encoding/json.html">
+            
+                    
+                    json
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" >
+            
+                <span>
+            
+                    
+                    crypto
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../crypto/md5.html">
+            
+                <a href="../crypto/md5.html">
+            
+                    
+                    md5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../crypto/sha256.html">
+            
+                <a href="../crypto/sha256.html">
+            
+                    
+                    sha256
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../crypto/hmac.html">
+            
+                <a href="../crypto/hmac.html">
+            
+                    
+                    hmac
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../reflect/reflect.html">
+            
+                <a href="../reflect/reflect.html">
+            
+                    
+                    reflect
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >bufio</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="bufio">bufio</h1>
+<h2 id="reader">Reader</h2>
+<p><code>bufio.Reader</code>&#x5BF9;<code>io.Reader</code>&#x8FDB;&#x884C;&#x4E86;&#x5305;&#x88C5;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x7F13;&#x51B2;&#x533A;&#x529F;&#x80FD;&#x3002;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Reader <span class="hljs-keyword">struct</span> {
+    buf          []<span class="hljs-keyword">byte</span>
+    rd           io.Reader <span class="hljs-comment">// reader provided by the client</span>
+    r, w         <span class="hljs-keyword">int</span>       <span class="hljs-comment">// buf read and write positions</span>
+    err          error
+    lastByte     <span class="hljs-keyword">int</span>       <span class="hljs-comment">// &#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8BFB;&#x53D6;&#x7684;&#x5B57;&#x8282;&#xFF0C;&#x7528;&#x4E8E;UnreadByte&#x64CD;&#x4F5C;</span>
+    lastRuneSize <span class="hljs-keyword">int</span>       <span class="hljs-comment">// &#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8BFB;&#x53D6;rune&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x7528;&#x4E8E;UnreadRune&#x64CD;&#x4F5C;</span>
+}
+</code></pre>
+<h3 id="&#x521B;&#x5EFA;">&#x521B;&#x5EFA;</h3>
+<p>&#x901A;&#x8FC7;<code>NewReader(rd io.Reader)</code>&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;Reader&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> NewReader(rd io.Reader) *Reader {
+    <span class="hljs-comment">// const defaultBufSize = 4096</span>
+    <span class="hljs-comment">// &#x9ED8;&#x8BA4;&#x7F13;&#x51B2;&#x533A;&#x5927;&#x5C0F;&#x4E3A;4K</span>
+    <span class="hljs-keyword">return</span> NewReaderSize(rd, defaultBufSize)
+}
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;<code>NewReader</code>&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x8C03;&#x7528;&#x4E86;<code>NewReaderSize</code>&#x65B9;&#x6CD5;&#xFF0C;<code>NewReaderSize</code>&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x7279;&#x5B9A;&#x5927;&#x5C0F;&#x7F13;&#x51B2;&#x533A;&#x7684;Reader&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> NewReaderSize(rd io.Reader, size <span class="hljs-keyword">int</span>) *Reader {
+    <span class="hljs-comment">// Is it already a Reader?</span>
+    b, ok := rd.(*Reader)
+    <span class="hljs-keyword">if</span> ok &amp;&amp; <span class="hljs-built_in">len</span>(b.buf) &gt;= size {
+        <span class="hljs-keyword">return</span> b
+    }
+    <span class="hljs-comment">// const minReadBufferSize = 16</span>
+    <span class="hljs-comment">// &#x7F13;&#x51B2;&#x533A;&#x6700;&#x5C0F;&#x4E3A;16byte</span>
+    <span class="hljs-keyword">if</span> size &lt; minReadBufferSize {
+        size = minReadBufferSize
+    }
+    r := <span class="hljs-built_in">new</span>(Reader)
+    r.reset(<span class="hljs-built_in">make</span>([]<span class="hljs-keyword">byte</span>, size), rd)
+    <span class="hljs-keyword">return</span> r
+}
+
+<span class="hljs-keyword">func</span> (b *Reader) reset(buf []<span class="hljs-keyword">byte</span>, r io.Reader) {
+    *b = Reader{
+        buf:          buf,
+        rd:           r,
+        lastByte:     <span class="hljs-number">-1</span>,
+        lastRuneSize: <span class="hljs-number">-1</span>,
+    }
+}
+</code></pre>
+<h3 id="read">read</h3>
+<p>&#x548C;&#x8BFB;&#x64CD;&#x4F5C;&#x76F8;&#x5173;&#x7684;&#x65B9;&#x6CD5;&#x6709;&#xFF1A;</p>
+<ul>
+<li>func (b *Reader) Read(p []byte) (n int, err error)</li>
+<li>func (b *Reader) ReadByte() (byte, error)</li>
+<li>func (b *Reader) ReadRune() (r rune, size int, err error)</li>
+<li>func (b *Reader) UnreadByte() error</li>
+<li>func (b *Reader) UnreadRune() error</li>
+<li>func (b *Reader) ReadSlice(delim byte) (line []byte, err error)</li>
+<li>func (b *Reader) ReadLine() (line []byte, isPrefix bool, err error)</li>
+<li>func (b *Reader) ReadBytes(delim byte) ([]byte, error)</li>
+<li>func (b *Reader) ReadString(delim byte) (string, error)</li>
+</ul>
+<p>&#x5176;&#x4E2D;<code>Read</code>&#x65B9;&#x6CD5;&#x6E90;&#x7801;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (b *Reader) Read(p []<span class="hljs-keyword">byte</span>) (n <span class="hljs-keyword">int</span>, err error) {
+    n = <span class="hljs-built_in">len</span>(p)
+    <span class="hljs-keyword">if</span> n == <span class="hljs-number">0</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>, b.readErr()
+    }
+    <span class="hljs-comment">// &#x5982;&#x679C;b.r == b.w&#xFF0C;&#x5219;&#x5F53;&#x524D;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#x65E0;&#x6570;&#x636E;</span>
+    <span class="hljs-keyword">if</span> b.r == b.w {
+        <span class="hljs-keyword">if</span> b.err != <span class="hljs-literal">nil</span> {
+            <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>, b.readErr()
+        }
+        <span class="hljs-comment">// &#x5982;&#x679C;p&#x7684;&#x5927;&#x5C0F;&#x5927;&#x4E8E;&#x7B49;&#x4E8E;&#x7F13;&#x51B2;&#x533A;&#x5927;&#x5C0F;&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x5C06;&#x6570;&#x636E;&#x8BFB;&#x5165;p&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(p) &gt;= <span class="hljs-built_in">len</span>(b.buf) {
+            <span class="hljs-comment">// Large read, empty buffer.</span>
+            <span class="hljs-comment">// Read directly into p to avoid copy.</span>
+            n, b.err = b.rd.Read(p)
+            <span class="hljs-keyword">if</span> n &lt; <span class="hljs-number">0</span> {
+                <span class="hljs-built_in">panic</span>(errNegativeRead)
+            }
+            <span class="hljs-keyword">if</span> n &gt; <span class="hljs-number">0</span> {
+                b.lastByte = <span class="hljs-keyword">int</span>(p[n<span class="hljs-number">-1</span>])
+                b.lastRuneSize = <span class="hljs-number">-1</span>
+            }
+            <span class="hljs-keyword">return</span> n, b.readErr()
+        }
+        <span class="hljs-comment">// &#x5982;&#x679C;p&#x7684;&#x5927;&#x5C0F;&#x5C0F;&#x4E8E;&#x7F13;&#x51B2;&#x533A;&#x5927;&#x5C0F;&#xFF0C;&#x5219;&#x5148;&#x5C06;&#x6570;&#x636E;&#x8BFB;&#x5165;&#x7F13;&#x51B2;&#x533A;</span>
+        b.fill() <span class="hljs-comment">// buffer is empty</span>
+        <span class="hljs-keyword">if</span> b.r == b.w {
+            <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>, b.readErr()
+        }
+    }
+
+    <span class="hljs-comment">// &#x5C06;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x5C3D;&#x53EF;&#x80FD;&#x7684;&#x62F7;&#x8D1D;&#x5230;p&#x4E2D;</span>
+    n = <span class="hljs-built_in">copy</span>(p, b.buf[b.r:b.w])
+    b.r += n
+    b.lastByte = <span class="hljs-keyword">int</span>(b.buf[b.r<span class="hljs-number">-1</span>])
+    b.lastRuneSize = <span class="hljs-number">-1</span>
+    <span class="hljs-keyword">return</span> n, <span class="hljs-literal">nil</span>
+}
+</code></pre>
+<p><code>ReadSlice(delim byte)</code>&#x4F1A;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x76F4;&#x5230;&#x9047;&#x5230;&#x5206;&#x9694;&#x7B26;<code>delim</code>&#x3002;&#x5982;&#x679C;&#x5728;&#x9047;&#x5230;<code>delim</code>&#x4E4B;&#x524D;&#x51FA;&#x9519;&#x4E86;&#x6216;&#x8005;&#x7F13;&#x51B2;&#x533A;&#x6EE1;&#x4E86;&#xFF0C;&#x4E5F;&#x4F1A;&#x9000;&#x51FA;&#x3002;</p>
+<p><code>ReadLine()</code>&#x4F1A;&#x8BFB;&#x53D6;&#x4E00;&#x884C;&#x6570;&#x636E;&#xFF0C;&#x540C;&#x6837;&#xFF0C;&#x5728;&#x9047;&#x5230;&#x6362;&#x884C;&#x7B26;&#x4E4B;&#x524D;&#xFF0C;&#x5982;&#x679C;&#x51FA;&#x9519;&#x4E86;&#x6216;&#x8005;&#x7F13;&#x51B2;&#x533A;&#x6EE1;&#x4E86;&#xFF0C;&#x4E5F;&#x4F1A;&#x9000;&#x51FA;&#x3002;&#x56E0;&#x6B64;&#x8BE5;&#x65B9;&#x6CD5;&#x5E76;&#x4E0D;&#x80FD;&#x4FDD;&#x8BC1;&#x9047;&#x5230;&#x6362;&#x884C;&#x7B26;&#x7684;&#x65F6;&#x5019;&#x8FD4;&#x56DE;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x8BFB;&#x5230;&#x7684;&#x6570;&#x636E;&#x53EF;&#x80FD;&#x5E76;&#x4E0D;&#x591F;&#x4E00;&#x884C;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-go">r := strings.NewReader(<span class="hljs-string">&quot;0123456789abcdefghijklmn\nopqrstuvwxyz&quot;</span>)
+br := bufio.NewReaderSize(r, <span class="hljs-number">16</span>)
+line, isPrefix, err := br.ReadLine()
+fmt.Println(<span class="hljs-keyword">string</span>(line)) <span class="hljs-comment">// 0123456789abcdef</span>
+fmt.Println(isPrefix)     <span class="hljs-comment">// true</span>
+fmt.Println(err)          <span class="hljs-comment">// &lt;nil&gt;</span>
+</code></pre>
+<p>&#x56E0;&#x6B64;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x8981;&#x6309;&#x884C;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#xFF0C;&#x4F7F;&#x7528;<code>ReadBytes(&apos;\n&apos;)</code>&#x6216;&#x8005;<code>ReadString(&apos;\n&apos;)</code>&#x4F1A;&#x662F;&#x66F4;&#x597D;&#x7684;&#x9009;&#x62E9;&#x3002;<code>ReadString</code>&#x5B9E;&#x9645;&#x4E0A;&#x8C03;&#x7528;&#x4E86;<code>ReadBytes</code>&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x5C06;&#x6570;&#x636E;&#x8F6C;&#x6210;&#x4E86;&#x5B57;&#x7B26;&#x4E32;&#x800C;&#x5DF2;&#x3002;<code>ReadBytes(delim byte)</code>&#x4F1A;&#x4E0D;&#x65AD;&#x5730;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#xFF0C;&#x76F4;&#x5230;&#x9047;&#x5230;&#x5206;&#x9694;&#x7B26;<code>delim</code>&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-go">r := strings.NewReader(<span class="hljs-string">&quot;0123456789abcdefghijklmn\nopqrstuvwxyz&quot;</span>)
+br := bufio.NewReaderSize(r, <span class="hljs-number">16</span>)
+line, err := br.ReadBytes(<span class="hljs-string">&apos;\n&apos;</span>)
+fmt.Println(<span class="hljs-keyword">string</span>(line)) <span class="hljs-comment">// 0123456789abcdefghijklmn</span>
+fmt.Println(err)          <span class="hljs-comment">// &lt;nil&gt;</span>
+</code></pre>
+<h3 id="&#x5176;&#x5B83;&#x64CD;&#x4F5C;">&#x5176;&#x5B83;&#x64CD;&#x4F5C;</h3>
+<ul>
+<li>func (b *Reader) Buffered() int</li>
+<li>func (b *Reader) Reset(r io.Reader)</li>
+<li>func (b *Reader) Discard(n int) (discarded int, err error)</li>
+<li>func (b *Reader) Peek(n int) ([]byte, error)</li>
+<li>func (b *Reader) WriteTo(w io.Writer) (n int64, err error)</li>
+</ul>
+<p><code>Buffered</code>&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#x7684;&#x53EF;&#x7528;&#x6570;&#x636E;&#x91CF;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (b *Reader) Buffered() <span class="hljs-keyword">int</span> { <span class="hljs-keyword">return</span> b.w - b.r }
+</code></pre>
+<p><code>Reset</code>&#x4F1A;&#x91CD;&#x7F6E;&#x6570;&#x636E;&#x6E90;&#xFF0C;&#x4E4B;&#x540E;&#x7684;&#x6570;&#x636E;&#x8BFB;&#x53D6;&#x90FD;&#x4F1A;&#x4ECE;&#x65B0;&#x7684;&#x6570;&#x636E;&#x6E90;&#x4E2D;&#x6765;&#x8BFB;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (b *Reader) Reset(r io.Reader) {
+    b.reset(b.buf, r)
+}
+</code></pre>
+<p><code>Discard(n int)</code>&#x4F1A;&#x8DF3;&#x8FC7;&#x4E4B;&#x540E;&#x7684;<code>n</code>&#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-go">br := bufio.NewReader(strings.NewReader(<span class="hljs-string">&quot;0123456789&quot;</span>))
+p := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">byte</span>, <span class="hljs-number">5</span>)
+br.Discard(<span class="hljs-number">3</span>)
+br.Read(p)
+fmt.Println(<span class="hljs-keyword">string</span>(p)) <span class="hljs-comment">// 34567</span>
+</code></pre>
+<p><code>Peek(n int)</code>&#x7528;&#x4E8E;&#x67E5;&#x770B;&#x63A5;&#x4E0B;&#x6765;&#x7684;<code>n</code>&#x4E2A;&#x5B57;&#x8282;&#x6570;&#x636E;&#xFF0C;&#x4F46;&#x662F;&#x5E76;&#x4E0D;&#x771F;&#x6B63;&#x8BFB;&#x53D6;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-go">br := bufio.NewReader(strings.NewReader(<span class="hljs-string">&quot;0123456789&quot;</span>))
+p := <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">byte</span>, <span class="hljs-number">5</span>)
+br.Peek(<span class="hljs-number">3</span>)
+br.Read(p)
+fmt.Println(<span class="hljs-keyword">string</span>(p)) <span class="hljs-comment">// 01234</span>
+</code></pre>
+<p><code>WriteTo</code>&#x5C06;&#x6570;&#x636E;&#x5199;&#x5165;&#x5230;&#x4E00;&#x4E2A;Writer&#x4E2D;&#xFF0C;&#x56E0;&#x6B64;<code>bufio.Reader</code>&#x5B9E;&#x73B0;&#x4E86;<code>io.WriterTo</code>&#x63A5;&#x53E3;&#x3002;</p>
+<h2 id="writer">Writer</h2>
+<p><code>bufio.Writer</code>&#x5BF9;<code>io.Writer</code>&#x8FDB;&#x884C;&#x4E86;&#x5305;&#x88C5;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x7F13;&#x51B2;&#x533A;&#x529F;&#x80FD;&#x3002;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Writer <span class="hljs-keyword">struct</span> {
+    err error
+    buf []<span class="hljs-keyword">byte</span> <span class="hljs-comment">// &#x7F13;&#x51B2;&#x533A;</span>
+    n   <span class="hljs-keyword">int</span>    <span class="hljs-comment">// &#x7F13;&#x51B2;&#x533A;&#x7684;&#x53EF;&#x7528;&#x6570;&#x636E;&#x91CF;</span>
+    wr  io.Writer
+}
+</code></pre>
+<p>&#x901A;&#x8FC7;&#x5982;&#x4E0B;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x65B0;&#x7684;Writer:</p>
+<ul>
+<li>func NewWriter(w io.Writer) *Writer</li>
+<li>func NewWriterSize(w io.Writer, size int) *Writer</li>
+</ul>
+<h3 id="write">write</h3>
+<p>&#x5199;&#x64CD;&#x4F5C;&#x76F8;&#x5173;&#x65B9;&#x6CD5;&#x6709;&#xFF1A;</p>
+<ul>
+<li>func (b *Writer) Write(p []byte) (nn int, err error)</li>
+<li>func (b *Writer) WriteByte(c byte) error</li>
+<li>func (b *Writer) WriteRune(r rune) (size int, err error)</li>
+<li>func (b *Writer) WriteString(s string) (int, error)</li>
+</ul>
+<p>&#x5176;&#x4E2D;&#xFF0C;<code>Write</code>&#x65B9;&#x6CD5;&#x6E90;&#x7801;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (b *Writer) Write(p []<span class="hljs-keyword">byte</span>) (nn <span class="hljs-keyword">int</span>, err error) {
+    <span class="hljs-comment">// b.Available() &#x7684;&#x503C;&#x4E3A; len(b.buf) - b.n</span>
+    <span class="hljs-comment">// &#x53EA;&#x8981;p&#x7684;&#x5927;&#x5C0F;&#x5927;&#x4E8E;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x53EF;&#x7528;&#x5927;&#x5C0F;&#xFF0C;&#x5219;&#x6267;&#x884C;&#x5FAA;&#x73AF;</span>
+    <span class="hljs-keyword">for</span> <span class="hljs-built_in">len</span>(p) &gt; b.Available() &amp;&amp; b.err == <span class="hljs-literal">nil</span> {
+        <span class="hljs-keyword">var</span> n <span class="hljs-keyword">int</span>
+        <span class="hljs-keyword">if</span> b.Buffered() == <span class="hljs-number">0</span> {
+            <span class="hljs-comment">// &#x5982;&#x679C;p&#x7684;&#x5927;&#x5C0F;&#x5927;&#x4E8E;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x53EF;&#x7528;&#x5927;&#x5C0F;&#xFF0C;&#x4E14;&#x7F13;&#x51B2;&#x533A;&#x4E3A;&#x7A7A;</span>
+            <span class="hljs-comment">// &#x5219;&#x6570;&#x636E;&#x76F4;&#x63A5;&#x5199;&#x5165;&#xFF0C;&#x65E0;&#x9700;&#x5148;&#x62F7;&#x8D1D;&#x5230;&#x7F13;&#x51B2;&#x533A;</span>
+            n, b.err = b.wr.Write(p)
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-comment">// &#x5C06;&#x6570;&#x636E;&#x62F7;&#x8D1D;&#x5230;&#x7F13;&#x51B2;&#x533A;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;flush&#x64CD;&#x4F5C;&#x5199;&#x5165;&#x7F13;&#x51B2;&#x533A;&#x6570;&#x636E;</span>
+            n = <span class="hljs-built_in">copy</span>(b.buf[b.n:], p)
+            b.n += n
+            b.flush()
+        }
+        nn += n
+        <span class="hljs-comment">// &#x5269;&#x4F59;&#x5F85;&#x5199;&#x5165;&#x6570;&#x636E;</span>
+        p = p[n:]
+    }
+    <span class="hljs-keyword">if</span> b.err != <span class="hljs-literal">nil</span> {
+        <span class="hljs-keyword">return</span> nn, b.err
+    }
+    <span class="hljs-comment">// &#x6B64;&#x65F6;p&#x7684;&#x5927;&#x5C0F;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;&#x7F13;&#x51B2;&#x533A;&#x5927;&#x5C0F;&#xFF0C;&#x56E0;&#x6B64;&#x5C06;&#x6570;&#x636E;&#x62F7;&#x8D1D;&#x5230;&#x7F13;&#x51B2;&#x533A;</span>
+    n := <span class="hljs-built_in">copy</span>(b.buf[b.n:], p)
+    b.n += n
+    nn += n
+    <span class="hljs-keyword">return</span> nn, <span class="hljs-literal">nil</span>
+}
+</code></pre>
+<h3 id="&#x5176;&#x5B83;&#x64CD;&#x4F5C;">&#x5176;&#x5B83;&#x64CD;&#x4F5C;</h3>
+<ul>
+<li>func (b *Writer) Available() int</li>
+<li>func (b *Writer) Buffered() int</li>
+<li>func (b *Writer) Flush() error</li>
+<li>func (b *Writer) ReadFrom(r io.Reader) (n int64, err error)</li>
+<li>func (b *Writer) Reset(w io.Writer)</li>
+</ul>
+<p><code>Available()</code>&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#x7684;&#x53EF;&#x7528;&#x5927;&#x5C0F;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (b *Writer) Available() <span class="hljs-keyword">int</span> { <span class="hljs-keyword">return</span> <span class="hljs-built_in">len</span>(b.buf) - b.n }
+</code></pre>
+<p><code>Buffered()</code>&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#x5DF2;&#x7ECF;&#x7F13;&#x5B58;&#x7684;&#x6570;&#x636E;&#x5927;&#x5C0F;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (b *Writer) Buffered() <span class="hljs-keyword">int</span> { <span class="hljs-keyword">return</span> b.n }
+</code></pre>
+<h2 id="readwriter">ReadWriter</h2>
+<p><code>bufio.ReadWriter</code>&#x5B9E;&#x73B0;&#x4E86;<code>io.ReadWriter</code>&#x63A5;&#x53E3;&#xFF0C;&#x540C;&#x65F6;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;Reader&#x548C;&#x4E00;&#x4E2A;Writer&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> ReadWriter <span class="hljs-keyword">struct</span> {
+    *Reader
+    *Writer
+}
+
+<span class="hljs-keyword">func</span> NewReadWriter(r *Reader, w *Writer) *ReadWriter {
+    <span class="hljs-keyword">return</span> &amp;ReadWriter{r, w}
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../io/io.html" class="navigation navigation-prev " aria-label="Previous page: io">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../bytes/bytes.html" class="navigation navigation-next " aria-label="Next page: bytes">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"bufio","level":"1.4","depth":1,"next":{"title":"bytes","level":"1.5","depth":1,"path":"bytes/bytes.md","ref":"./bytes/bytes.md","articles":[]},"previous":{"title":"io","level":"1.3","depth":1,"path":"io/io.md","ref":"./io/io.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","edit-link","-fontsettings"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/syaning/go-pkgs"},"edit-link":{"label":"Edit This Page","base":"https://github.com/syaning/go-pkgs/edit/master"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sharing":{"facebook":false,"twitter":false}},"gitbook":"*"},"file":{"path":"bufio/bufio.md","mtime":"2017-05-08T05:27:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-09-05T07:48:45.469Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
